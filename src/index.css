@@ -28,6 +28,7 @@ body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  overflow-x: hidden;
 }
 
 h1 {
@@ -57,15 +58,15 @@ button {
 
 /* .aboutbg {
   background-image: url("./assets/Rectangle 30.png");
-}
-
-.gallerybg {
-  background-image: url("./assets/Rectangle 31.png");
-}
-
-.gamesbg {
-  background-image: url("./assets/Games and sports 2.png");
 } */
+
+.herobg {
+  background-image: url("./assets/Mantle1.png");
+}
+
+/* .gamesbg {
+  background-image: url("./assets/Games and sports 2.png");
+}  */
 
 ::-webkit-scrollbar {
   width: 5px;

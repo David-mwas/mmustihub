@@ -1,14 +1,8 @@
 import React, { useState } from "react";
 import { Link, NavLink } from "react-router-dom";
 import { HashLink } from "react-router-hash-link";
-import {
-  FaCaretDown,
-  FaCross,
-  FaMailBulk,
-  FaPhoneAlt,
-  FaTimes,
-} from "react-icons/fa";
-import { HiMail, HiMenuAlt1, HiMenuAlt3 } from "react-icons/hi";
+import { FaTimes,FaDonate } from "react-icons/fa";
+import { HiMail, HiMenuAlt1, } from "react-icons/hi";
 
 import LogoImg from "../../assets/logo1.png";
 
@@ -27,7 +21,7 @@ const Header = ({ setShowSidebar }) => {
             {/* logo */}
             <div className="flex items-center justify-center ">
               <Link to="/" onClick={window.scrollTo(0, 0)}>
-                <div className="flex h-full gap-2 items-center font-semibold justify-center">
+                <div className="flex h-full gap-2 items-center font-semibold justify-center md:ml-16">
                   <img
                     src={LogoImg}
                     alt=""
@@ -103,9 +97,10 @@ const Header = ({ setShowSidebar }) => {
 
               <Link
                 to={"/donate"}
-                className="bg-secondary px-6 h-[28px] rounded-[60px] text-white font-[500] hover:opacity-75"
+                className="bg-secondary px-6 h-[30px]  rounded-[60px] text-white font-[500] hover:opacity-75 shadow-xl flex items-center gap-2"
               >
-                Donate
+                <FaDonate />
+                <span>Donate</span>
               </Link>
             </div>
           </div>

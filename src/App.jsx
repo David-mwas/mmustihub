@@ -1,11 +1,11 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Homepage from "./Pages/Homepage";
-// import AlumniPage from "./Pages/AlumniPage";
-// import Discover from "./Pages/DiscoverPage";
-// import Academics from "./Pages/AcademicsPage";
-// import AdministrationPage from "./Pages/AdministrationPage";
+import AboutPage from "./Pages/AboutPage";
+import Programs from "./Pages/ProgramsPage";
+import Projects from "./Pages/ProjectsPage";
+import Membership from "./Pages/MembershipPage";
 // import ActivitiesPage from "./Pages/ActivitiesPage";
-// import NewsAndEventsPage from "./Pages/NewsAndEventsPage";
+import CommunityAndEvents from "./Pages/CommunityAndEvents";
 import NotFoundPage from "./Pages/NotFoundPage";
 
 function App() {
@@ -13,12 +13,12 @@ function App() {
     <Router>
       <Routes>
         <Route path="/" element={<Homepage />} />
-        {/* <Route path="/alumni" element={<AlumniPage />} />
-        <Route path="/discover" element={<Discover />} />
-        <Route path="/academics" element={<Academics />} />
-        <Route path="/administration" element={<AdministrationPage />} />
-        <Route path="/activities" element={<ActivitiesPage />} />
-        <Route path="/newsandevents" element={<NewsAndEventsPage />} /> */}
+        <Route path="/about" element={<AboutPage />} />
+        <Route path="/programs" element={<Programs />} />
+        <Route path="/projects" element={<Projects />} />
+        <Route path="/membership" element={<Membership />} />
+        {/* <Route path="/activities" element={<ActivitiesPage />} /> */}
+        <Route path="/communityandevents" element={<CommunityAndEvents />} />
         <Route path="*" element={<NotFoundPage />} />
       </Routes>
     </Router>
