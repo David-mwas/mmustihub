@@ -1,12 +1,12 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import PageHome from "./pages/HomeDefaultPage";
-import AboutPage from "./Pages/AboutPage";
-import Programs from "./Pages/ProgramsPage";
-import Projects from "./Pages/ProjectsPage";
-import Membership from "./Pages/MembershipPage";
-import Donate from "./Pages/DonatePage";
-import CommunityAndEvents from "./Pages/CommunityAndEvents";
-import NotFoundPage from "./Pages/NotFoundPage";
+import AboutPage from "./pages/AboutPage";
+import Programs from "./pages/ProgramsPage";
+import Projects from ".pages/ProjectsPage";
+import Membership from "./pages/MembershipPage";
+import Donate from "./pages/DonatePage";
+import CommunityAndEvents from "./pages/CommunityAndEvents";
+import NotFoundPage from "./pages/NotFoundPage";
 
 function App() {
   return (
