@@ -2,12 +2,12 @@ import React, { useState } from "react";
 import Header from "../components/common/Header";
 import Sidebar from "../components/common/Sidebar";
 import Footer from "../components/common/Footer";
-import Hero from "../components/HomePage/Hero";
-import About from "../components/HomePage/About";
-import Services from "../components/HomePage/Services";
-import Testimonials from "../components/HomePage/Testimonials";
+import Hero from "../components/Home/Hero";
+import About from "../components/Home/About";
+import Services from "../components/Home/Services";
+import Testimonials from "../components/Home/Testimonials";
 
-function HomePage() {
+function Homepage() {
   const [showSideBar, setShowSidebar] = useState(false);
   return (
     <div>
@@ -22,4 +22,4 @@ function HomePage() {
   );
 }
 
-export default HomePage;
+export default Homepage;
