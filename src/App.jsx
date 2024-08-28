@@ -2,7 +2,7 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import PageHome from "./pages/HomeDefaultPage";
 import AboutPage from "./pages/AboutPage";
 import Programs from "./pages/ProgramsPage";
-import Projects from ".pages/ProjectsPage";
+import Projects from "./pages/ProjectsPage";
 import Membership from "./pages/MembershipPage";
 import Donate from "./pages/DonatePage";
 import CommunityAndEvents from "./pages/CommunityAndEvents";
