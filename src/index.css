@@ -55,7 +55,11 @@ button {
   background-size: cover;
 
 }
-
+.list{
+  list-style-type: disk;
+  list-style-image: url("./assets/Vector.png");
+  list-style-position: inside;
+}
 /* .aboutbg {
   background-image: url("./assets/Rectangle 30.png");
 } */

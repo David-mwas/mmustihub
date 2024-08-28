@@ -4,7 +4,7 @@ import AboutPage from "./Pages/AboutPage";
 import Programs from "./Pages/ProgramsPage";
 import Projects from "./Pages/ProjectsPage";
 import Membership from "./Pages/MembershipPage";
-// import ActivitiesPage from "./Pages/ActivitiesPage";
+import Donate from "./Pages/DonatePage";
 import CommunityAndEvents from "./Pages/CommunityAndEvents";
 import NotFoundPage from "./Pages/NotFoundPage";
 
@@ -17,7 +17,7 @@ function App() {
         <Route path="/programs" element={<Programs />} />
         <Route path="/projects" element={<Projects />} />
         <Route path="/membership" element={<Membership />} />
-        {/* <Route path="/activities" element={<ActivitiesPage />} /> */}
+        <Route path="/donate" element={<Donate />} />
         <Route path="/communityandevents" element={<CommunityAndEvents />} />
         <Route path="*" element={<NotFoundPage />} />
       </Routes>

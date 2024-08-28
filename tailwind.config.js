@@ -39,6 +39,7 @@ export default {
         "card-hover": "#FFFFFF",
         "card-active": "#FFFFFF",
         "card-active-hover": "#FFFFFF",
+        black: "#333",
       },
     },
   },

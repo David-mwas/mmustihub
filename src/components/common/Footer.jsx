@@ -1,14 +1,13 @@
 import React from "react";
 import { HashLink } from "react-router-hash-link";
 import { Link, NavLink } from "react-router-dom";
-import { FaCaretDown, FaTwitter, FaGithub, FaFacebook } from "react-icons/fa";
+import { FaTwitter, FaGithub, FaFacebook } from "react-icons/fa";
 
-import { Component, useState } from "react";
 import LogoImg from "../../assets/logo1.png";
 function Footer() {
   return (
     <section className="text-white  bottom-0 relative" id="footer">
-      <footer className="bg text-body py-8 relative pt-[150px] md:pt-28">
+      <footer className="bg text-body py-8 relative pt-[70px] md:pt-24">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8 pt-4">
             <div>
@@ -156,15 +155,15 @@ function Footer() {
             </div>
             <div>
               <h5 className="text-xl font-semibold mb-6">Social Links</h5>
-              <div className="flex flex-row items-center text-center gap-6">
+              <div className="flex flex-row items-center text-center gap-6 text-tersiary">
                 <a href="">
-                  <FaTwitter />
+                  <FaTwitter className="hover:scale-125 h-[28px] w-[28px] transition-all duration-100 ease-in-out" />
                 </a>
                 <a href="">
-                  <FaGithub />
+                  <FaGithub className="hover:scale-125 h-[28px] w-[28px] transition-all duration-100 ease-in-out" />
                 </a>
                 <a href="">
-                  <FaFacebook />
+                  <FaFacebook className="hover:scale-125 h-[28px] w-[28px] transition-all duration-100 ease-in-out" />
                 </a>
               </div>
             </div>
@@ -176,7 +175,7 @@ function Footer() {
         </div>
         <div className="absolute flex items-center  justify-center float-right flex-col md:bottom-[100px] bottom-[120px] right-2">
           <div
-            className="w-12 flex items-center justify-center  shadow rounded-full shadow-black px-2 py-2 bg-body mx-12 animate-bounce"
+            className="w-12 h-12 flex items-center justify-center  shadow rounded-full shadow-black px-2 py-2 bg-body mx-12 animate-bounce"
             rel="ugc"
           >
             <HashLink to="#" smooth>
@@ -190,7 +189,7 @@ function Footer() {
                 strokeWidth="2"
                 strokeLinecap="round"
                 strokeLinejoin="round"
-                className="text-white w-8 h-8"
+                className="text-white w-6 h-6"
               >
                 <path d="m5 12 7-7 7 7"></path>
                 <path d="M12 19V5"></path>
