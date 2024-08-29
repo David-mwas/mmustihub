@@ -19,7 +19,11 @@ a {
   transition: all .1s cubic-bezier(0.175, 0.885, 0.32, 1.275);
   text-decoration: inherit;
 }
-ul li a:hover,ul li a:active {
+.sidebarlinkactive{
+  color: white;
+  border-bottom: 2px solid white;
+}
+ul li a:hover,ul li a:active,.activeLink {
   color: #02CCFE;
   border-bottom: 2px solid #02CCFE;
 }
@@ -59,6 +63,7 @@ button {
   list-style-type: disk;
   list-style-image: url("./assets/Vector.png");
   list-style-position: inside;
+  
 }
 /* .aboutbg {
   background-image: url("./assets/Rectangle 30.png");

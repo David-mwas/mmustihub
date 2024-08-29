@@ -1,8 +1,8 @@
 import React, { useState } from "react";
-import { Link, NavLink } from "react-router-dom";
-import { HashLink } from "react-router-hash-link";
+import { Link, NavLink, useLocation } from "react-router-dom";
+// import { HashLink } from "react-router-hash-link";
 import { FaTimes, FaDonate } from "react-icons/fa";
-import { HiMail, HiMenuAlt1 } from "react-icons/hi";
+import { HiMenuAlt1 } from "react-icons/hi";
 
 import LogoImg from "../../assets/logo1.png";
 
@@ -12,6 +12,7 @@ const Header = ({ setShowSidebar }) => {
     setShowMenu(!showMenu);
     setShowSidebar((prevState) => !prevState);
   };
+  const { pathname } = useLocation();
 
   return (
     <>
@@ -34,13 +35,24 @@ const Header = ({ setShowSidebar }) => {
             <div className="hidden   ml-20 lg:block">
               <ul className="flex items-center gap-8">
                 <li className="relative py-4 group cursor-pointer">
-                  <NavLink to={"/about"}>About</NavLink>
+                  <NavLink
+                    to={"/about"}
+                    className={`${pathname == "/about" && "activeLink"}`}
+                  >
+                    About
+                  </NavLink>
                 </li>
                 <li className="relative py-4 group cursor-pointer">
-                  <NavLink to={"/programs"}>Programs</NavLink>
+                  <NavLink
+                    to={"/programs"}
+                    className={`${pathname == "/programs" && "activeLink"}`}
+                  >
+                    Programs
+                  </NavLink>
                 </li>
                 <li className="py-4">
                   <NavLink
+                    className={`${pathname == "/projects" && "activeLink"}`}
                     activeclassname="active"
                     to="/projects"
                     onClick={() => window.scrollTo(0, 0)}
@@ -50,6 +62,7 @@ const Header = ({ setShowSidebar }) => {
                 </li>
                 <li className="py-4">
                   <NavLink
+                    className={`${pathname == "/membership" && "activeLink"}`}
                     activeclassname="active"
                     to="/membership"
                     onClick={() => window.scrollTo(0, 0)}
@@ -60,6 +73,9 @@ const Header = ({ setShowSidebar }) => {
 
                 <li className="py-4">
                   <NavLink
+                    className={`${
+                      pathname == "/communityandevents" && "activeLink"
+                    }`}
                     activeclassname="active"
                     to="/communityandevents"
                     onClick={() => window.scrollTo(0, 0)}
@@ -68,9 +84,12 @@ const Header = ({ setShowSidebar }) => {
                   </NavLink>
                 </li>
                 <li className="py-4">
-                  <HashLink smooth to="/#footer">
+                  <NavLink
+                    to="/contact"
+                    className={`${pathname == "/contact" && "activeLink"}`}
+                  >
                     Contact
-                  </HashLink>
+                  </NavLink>
                 </li>
               </ul>
             </div>
@@ -97,7 +116,7 @@ const Header = ({ setShowSidebar }) => {
 
               <Link
                 to={"/donate"}
-                className="bg-secondary px-4 h-[30px]  rounded-[60px] text-white font-[500] hover:opacity-75 shadow-xl flex items-center gap-2 lg:px-6"
+                className="bg-secondary px-4 h-[30px]  rounded-[60px] text-white font-[500] hover:opacity-75 hover:scale-105  transition-all duration-200 ease-in-out shadow-xl flex items-center gap-2 lg:px-6"
               >
                 <FaDonate />
                 <span>Donate</span>

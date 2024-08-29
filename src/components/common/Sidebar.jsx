@@ -1,8 +1,9 @@
 import React, { useState } from "react";
-import { Link, NavLink } from "react-router-dom";
-import { HashLink } from "react-router-hash-link";
+import { Link, NavLink, useLocation } from "react-router-dom";
+// import { HashLink } from "react-router-hash-link";
 
 function Sidebar({ showSideBar }) {
+  const { pathname } = useLocation();
   return (
     <>
       <nav
@@ -14,9 +15,9 @@ function Sidebar({ showSideBar }) {
           <ul className="flex flex-col ml-4 gap-2 ">
             <li className="relative py-2 group cursor-pointer ">
               <NavLink
-                className={
-                  "hover:border-white hover:text-white transition-all duration-100 ease-in-out"
-                }
+                className={`${
+                  pathname == "/about" && "sidebarlinkactive"
+                } hover:text-white hover:border-white transition-all duration-100 ease-in-out`}
                 to={"/about"}
                 activeclassname="active"
                 onClick={() => window.scrollTo(0, 0)}
@@ -26,9 +27,9 @@ function Sidebar({ showSideBar }) {
             </li>
             <li className="relative py-2 group cursor-pointer">
               <NavLink
-                className={
-                  "hover:border-white hover:text-white transition-all duration-100 ease-in-out"
-                }
+                className={`${
+                  pathname == "/programs" && "sidebarlinkactive"
+                } hover:text-white hover:border-white transition-all duration-100 ease-in-out`}
                 to={"/programs"}
                 activeclassname="active"
                 onClick={() => window.scrollTo(0, 0)}
@@ -38,9 +39,9 @@ function Sidebar({ showSideBar }) {
             </li>
             <li className="py-2">
               <NavLink
-                className={
-                  "hover:border-white hover:text-white transition-all duration-100 ease-in-out"
-                }
+                className={`${
+                  pathname == "/projects" && "sidebarlinkactive"
+                } hover:text-white hover:border-white transition-all duration-100 ease-in-out`}
                 activeclassname="active"
                 to="/projects"
                 onClick={() => window.scrollTo(0, 0)}
@@ -50,9 +51,9 @@ function Sidebar({ showSideBar }) {
             </li>
             <li className="py-2">
               <NavLink
-                className={
-                  "hover:border-white hover:text-white transition-all duration-100 ease-in-out"
-                }
+                className={`${
+                  pathname == "/membership" && "sidebarlinkactive"
+                } hover:text-white hover:border-white transition-all duration-100 ease-in-out`}
                 activeclassname="active"
                 to="/membership"
                 onClick={() => window.scrollTo(0, 0)}
@@ -63,9 +64,9 @@ function Sidebar({ showSideBar }) {
 
             <li className="py-4">
               <NavLink
-                className={
-                  "hover:border-white hover:text-white transition-all duration-100 ease-in-out"
-                }
+                className={`${
+                  pathname == "/communityandevents" && "sidebarlinkactive"
+                } hover:text-white hover:border-white transition-all duration-100 ease-in-out`}
                 activeclassname="active"
                 to="/communityandevents"
                 onClick={() => window.scrollTo(0, 0)}
@@ -74,15 +75,14 @@ function Sidebar({ showSideBar }) {
               </NavLink>
             </li>
             <li className="py-4">
-              <HashLink
-                smooth
-                to="/#footer"
-                className={
-                  "hover:border-white hover:text-white transition-all duration-100 ease-in-out"
-                }
+              <NavLink
+                to="/contact"
+                className={`${
+                  pathname == "/contact" && "sidebarlinkactive"
+                } hover:text-white hover:border-white transition-all duration-100 ease-in-out`}
               >
                 Contact
-              </HashLink>
+              </NavLink>
             </li>
           </ul>
         </div>

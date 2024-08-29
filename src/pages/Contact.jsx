@@ -3,16 +3,16 @@ import Header from "../components/common/Header";
 import Sidebar from "../components/common/Sidebar";
 import Footer from "../components/common/Footer";
 
-function AboutPage() {
+function Contact() {
   const [showSideBar, setShowSidebar] = useState(false);
   return (
     <div>
       <Header setShowSidebar={setShowSidebar} />
       <Sidebar showSideBar={showSideBar} />
-      AboutPage
+      Contact
       <Footer />
     </div>
   );
 }
 
-export default AboutPage;
+export default Contact;

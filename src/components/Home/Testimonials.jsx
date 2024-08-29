@@ -83,7 +83,7 @@ function Testimonials() {
         Testimonials
       </h2>
 
-      <Slider {...settings} >
+      <Slider {...settings}>
         {testimonials?.map((testimonial, index) => (
           <div
             key={index}

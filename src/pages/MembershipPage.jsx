@@ -1,7 +1,17 @@
-import React from "react";
-
+import React, { useState } from "react";
+import Header from "../components/common/Header";
+import Sidebar from "../components/common/Sidebar";
+import Footer from "../components/common/Footer";
 function MembershipPage() {
-  return <div>MembershipPage</div>;
+  const [showSideBar, setShowSidebar] = useState(false);
+  return (
+    <div>
+      <Header setShowSidebar={setShowSidebar} />
+      <Sidebar showSideBar={showSideBar} />
+      MembershipPage
+      <Footer />
+    </div>
+  );
 }
 
 export default MembershipPage;

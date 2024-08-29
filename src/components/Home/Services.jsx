@@ -1,5 +1,6 @@
 import React from "react";
 import serviceimg from "../../assets/services.png";
+import { Link } from "react-router-dom";
 function Services() {
   return (
     <div className="w-full px-6 lg:px-12 py-8 text-black">
@@ -32,6 +33,14 @@ function Services() {
             <li className="list truncate">Networking Opportunities</li>
           </ul>
         </div>
+      </div>
+      <div>
+        <Link
+          to={"/donate"}
+          className="bg-secondary px-4 h-[35px]  rounded-[60px] text-white font-[500] hover:opacity-75 shadow-xl flex items-center gap-2 lg:px-6 mt-6 w-[180px] text-center justify-center lg:ml-[57px] hover:scale-105  transition-all duration-200 ease-in-out "
+        >
+          Donate
+        </Link>
       </div>
     </div>
   );
