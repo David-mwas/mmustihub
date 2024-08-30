@@ -16,16 +16,18 @@
 a {
   font-weight: 600;
   color: black;
-  transition: all .1s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  transition: all 0.1s cubic-bezier(0.175, 0.885, 0.32, 1.275);
   text-decoration: inherit;
 }
-.sidebarlinkactive{
+.sidebarlinkactive {
   color: white;
   border-bottom: 2px solid white;
 }
-ul li a:hover,ul li a:active,.activeLink {
-  color: #02CCFE;
-  border-bottom: 2px solid #02CCFE;
+ul li a:hover,
+ul li a:active,
+.activeLink {
+  color: #02ccfe;
+  border-bottom: 2px solid #02ccfe;
 }
 
 body {
@@ -41,29 +43,29 @@ h1 {
 }
 
 button {
-
   cursor: pointer;
   transition: border-color 0.25s;
 }
 
-
-
-
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@media (min-width: 2560px) {
+  .xll\:h-\[530px\] {
+    height: 530px;
+  }
+}
 .bg {
   background-image: url("./assets/footer.png");
   background-repeat: no-repeat;
   background-position: top;
   background-size: cover;
-
 }
-.list{
+.list {
   list-style-type: disk;
   list-style-image: url("./assets/Vector.png");
   list-style-position: inside;
-  
 }
 /* .aboutbg {
   background-image: url("./assets/Rectangle 30.png");
@@ -71,6 +73,9 @@ button {
 
 .herobg {
   background-image: url("./assets/Mantle1.png");
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: cover;
 }
 
 /* .gamesbg {

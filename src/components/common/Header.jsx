@@ -17,8 +17,8 @@ const Header = ({ setShowSidebar }) => {
   return (
     <>
       <header className="fixed top-0 right-0 bg-white w-screen text-black shadow-xl z-[9999] justify-between items-center px-6 flex h-[80px] text-center">
-        <div className="container py-3 sm:py-0 relative">
-          <div className="flex justify-between items-center">
+        <div className="w-full py-3 sm:py-0 relative">
+          <div className="w-full flex justify-between items-center">
             {/* logo */}
             <div className="flex items-center justify-center ">
               <Link to="/" onClick={window.scrollTo(0, 0)}>

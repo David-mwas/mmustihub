@@ -2,7 +2,7 @@ import React from "react";
 import aboutimg from "../../assets/about.png";
 function About() {
   return (
-    <div className="w-full px-6 lg:px-12 py-8 text-black bg-[#E0F7FA]">
+    <div className="w-full px-6 lg:px-12 py-8 text-black bg-[#E0F7FA] mt-0">
       <div className="w-full flex lg:flex-row flex-col items-start justify-between  ">
         <div className="w-full lg:w-[30%] lg:ml-[60px]">
           <img

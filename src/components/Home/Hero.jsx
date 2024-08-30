@@ -4,8 +4,8 @@ import bulb from "../../assets/bulb.png";
 import { Link } from "react-router-dom";
 function Hero() {
   return (
-    <div className="w-screen h-screen herobg relative flex items-center justify-center overflow-y-clip">
-      <div className="flex w-full flex-col lg:flex-row items-center px-6 lg:px-12 z-[9]  lg:pt-0 gap-[150px] ">
+    <div className="w-screen h-screen  relative flex items-center justify-center overflow-y-clip herobg ">
+      <div className="flex w-full flex-col lg:flex-row items-center px-6 lg:px-12 z-[9]  lg:pt-0 gap-[150px]">
         <div className="w-full lg:w-[45%] space-y-4 flex flex-col justify-center lg:items-start lg:pl-[80px] pt-12 lg:pt-0">
           <h1 className=" text-3xl lg:text-4xl font-extrabold text-white">
             Ignite Innovation,{" "}
@@ -39,11 +39,10 @@ function Hero() {
           />
         </div>
       </div>
-
       <img
         src={vectors}
         alt=""
-        className="absolute w-full h-[393px] lg:bottom-[-200px] lg:object-cover bottom-[-230px]"
+        className="absolute w-full h-[393px] lg:bottom-[-200px] lg:object-cover bottom-[-230px] bg-red-5 herobg xll:h-[530px]"
       />
     </div>
   );
