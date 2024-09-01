@@ -3,7 +3,7 @@ import serviceimg from "../../assets/services.png";
 import { Link } from "react-router-dom";
 function Services() {
   return (
-    <div className="w-full px-6 lg:px-12 py-8 text-black">
+    <div className="w-screen px-6 lg:px-12 py-8 text-black">
       <div className="w-full flex lg:flex-row-reverse flex-col items-start justify-between  ">
         <div className="w-full lg:w-[50%] ">
           <img
@@ -36,10 +36,10 @@ function Services() {
       </div>
       <div>
         <Link
-          to={"/donate"}
+          to={"/programs"}
           className="bg-secondary px-4 h-[35px]  rounded-[60px] text-white font-[500] hover:opacity-75 shadow-xl flex items-center gap-2 lg:px-6 mt-6 w-[180px] text-center justify-center lg:ml-[57px] hover:scale-105  transition-all duration-200 ease-in-out "
         >
-          Donate
+          Explore
         </Link>
       </div>
     </div>

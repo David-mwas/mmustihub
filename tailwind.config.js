@@ -41,6 +41,9 @@ export default {
         "card-active-hover": "#FFFFFF",
         black: "#333",
       },
+      boxShadowColor: {
+        black: "#333",
+      },
     },
   },
   plugins: [],

@@ -56,14 +56,13 @@ button {
     height: 530px;
   }
 }
-/* @media screen and (max-width: 2560px) {
-  .vectorbg {
-    background-image: url("./assets/Blobs2.svg");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-  }
-} */
+
+.membershipbg {
+  background-image: url("./assets/Mantle2.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
 
 .bg {
   background-image: url("./assets/footer.png");
@@ -102,9 +101,9 @@ button {
 ::-webkit-scrollbar-thumb {
   border-radius: 5px;
   height: 10px;
-  background: rgb(59 130 246);
+  background: rgba(2, 204, 254, 0.7);
 }
-
-::-webkit-scrollbar-track {
+#02ccfe,
+#0fa958 ::-webkit-scrollbar-track {
   background: #aaa;
 }

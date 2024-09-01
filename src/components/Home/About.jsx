@@ -16,7 +16,7 @@ function About() {
           <h2 className="text-secondary font-bold text-2xl mt-8 mb-4">
             What Mmust Ihub is
           </h2>
-          <p className="w-full lg:w-[85%] text-lg">
+          <p className="w-full lg:w-[85%] text-md">
             MMUST iHub is a vibrant innovation hub dedicated to fostering
             <span className="text-tersiary font-semibold">
               {" "}
@@ -30,7 +30,7 @@ function About() {
             professionals to turn bold ideas into impactful realities.
           </p>
           <br />
-          <p className="w-full lg:w-[85%] text-lg">
+          <p className="w-full lg:w-[85%] text-md">
             By providing access to state-of-the-art resources, mentorship, and a
             dynamic community, MMUST iHub empowers innovators to tackle
             real-world challenges and shape the future. Whether you're

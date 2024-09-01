@@ -6,6 +6,7 @@ import Hero from "../components/Home/Hero";
 import About from "../components/Home/About";
 import Services from "../components/Home/Services";
 import Testimonials from "../components/Home/Testimonials";
+import Membership from "../components/Home/Membership";
 
 function Homepage() {
   const [showSideBar, setShowSidebar] = useState(false);
@@ -17,6 +18,7 @@ function Homepage() {
       <About />
       <Services />
       <Testimonials />
+      <Membership />
       <Footer />
     </div>
   );
