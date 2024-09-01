@@ -56,6 +56,15 @@ button {
     height: 530px;
   }
 }
+/* @media screen and (max-width: 2560px) {
+  .vectorbg {
+    background-image: url("./assets/Blobs2.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+} */
+
 .bg {
   background-image: url("./assets/footer.png");
   background-repeat: no-repeat;

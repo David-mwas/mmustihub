@@ -1,5 +1,5 @@
 import React from "react";
-import vectors from "../../assets/Blobs.png";
+import vectors from "../../assets/Blobs2.svg";
 import bulb from "../../assets/bulb.png";
 import { Link } from "react-router-dom";
 function Hero() {
@@ -39,11 +39,9 @@ function Hero() {
           />
         </div>
       </div>
-      <img
-        src={vectors}
-        alt=""
-        className="absolute w-full h-[393px] lg:bottom-[-200px] lg:object-cover bottom-[-230px] bg-red-5 herobg xll:h-[530px]"
-      />
+      <div className="w-screen absolute bottom-[-184px]  flex h-[375px] lg:bottom-[-225px] xl:bottom-[-225px] herobg xll:h-[530px]">
+        <img src={vectors} alt=" " className=" w-full h-full lg:object-cover" />
+      </div>
     </div>
   );
 }
