@@ -7,6 +7,7 @@ import About from "../components/Home/About";
 import Services from "../components/Home/Services";
 import Testimonials from "../components/Home/Testimonials";
 import Membership from "../components/Home/Membership";
+import Sponser from "../components/Home/Sponser";
 
 function Homepage() {
   const [showSideBar, setShowSidebar] = useState(false);
@@ -19,6 +20,7 @@ function Homepage() {
       <Services />
       <Testimonials />
       <Membership />
+      <Sponser />
       <Footer />
     </div>
   );

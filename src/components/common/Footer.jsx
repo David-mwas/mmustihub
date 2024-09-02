@@ -4,9 +4,13 @@ import { Link, NavLink } from "react-router-dom";
 import { FaTwitter, FaGithub, FaFacebook } from "react-icons/fa";
 
 import LogoImg from "../../assets/logo1.png";
+import SubscribePopUp from "../Home/SubscribePopUp";
 function Footer() {
   return (
-    <section className="text-white  bottom-0 relative" id="footer">
+    <section className="w-screen text-white  bottom-0 relative" id="footer">
+      <form className="absolute top-[-140px] translate-x-[50%] right-[50%] z-[99]">
+        <SubscribePopUp />
+      </form>
       <footer className="bg text-body py-8 relative pt-[70px] md:pt-24">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8 pt-4">

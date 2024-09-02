@@ -4,12 +4,12 @@ import { Link } from "react-router-dom";
 function Services() {
   return (
     <div className="w-screen px-6 lg:px-12 py-8 text-black">
-      <div className="w-full flex lg:flex-row-reverse flex-col items-start justify-between  ">
-        <div className="w-full lg:w-[50%] ">
+      <div className="w-full flex lg:flex-row-reverse flex-col items-start justify-center  ">
+        <div className="w-full lg:w-[50%] lg:mt-16">
           <img
             src={serviceimg}
             alt=""
-            className="lg:w-[450px] lg:h-[320px] object-contain "
+            className="lg:w-[450px] lg:h-[300px] object-contain "
           />
         </div>
         <div className="w-full lg:w-[50%] lg:ml-[60px]">
