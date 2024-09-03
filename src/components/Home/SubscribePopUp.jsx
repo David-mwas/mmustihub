@@ -1,8 +1,27 @@
-import React from "react";
+import { useAnimation, motion } from "framer-motion";
+import React, { useEffect } from "react";
+import { useInView } from "react-intersection-observer";
 
-function SubscribePopUp() {
+function SubscribePopUp({ inView }) {
+  const controls = useAnimation();
+
+  useEffect(() => {
+    if (inView) {
+      controls.start({ x: 0, y: 0, opacity: 1, rotate: 360 });
+    }
+  }, [controls, inView]);
   return (
-    <div className="bg-secondary w-[95vw] lg:w-[700px] rounded-xl px-4 py-8 gap-6 flex flex-col items-center justify-center shadow-md shadow-[#000]">
+    <motion.div
+      className="bg-secondary w-[95vw] lg:w-[700px] rounded-xl px-4 py-8 gap-6 flex flex-col items-center justify-center shadow-md shadow-[#000] origin-top"
+      initial={{ x: "0", y: "-1000%", opacity: 0 }}
+      animate={controls}
+      transition={{
+        ease: "easeInOut",
+        duration: .9,
+        type: "spring",
+        stiffness: 50,
+      }}
+    >
       <div className="justify-start flex w-full">
         <h3 className="font-bold text-left truncate">
           Subscribe to our Newsletter to get latest <br />
@@ -22,7 +41,7 @@ function SubscribePopUp() {
           Subscribe
         </button>
       </div>
-    </div>
+    </motion.div>
   );
 }
 

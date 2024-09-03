@@ -74,9 +74,12 @@ button {
   list-style-image: url("./assets/Vector.png");
   list-style-position: inside;
 }
-/* .aboutbg {
-  background-image: url("./assets/Rectangle 30.png");
-} */
+.aboutbg {
+  background-image: url("./assets/about/Mantle3.png");
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: cover;
+}
 
 .herobg {
   background-image: url("./assets/Mantle1.png");

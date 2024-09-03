@@ -2,6 +2,10 @@ import React, { useState } from "react";
 import Header from "../components/common/Header";
 import Sidebar from "../components/common/Sidebar";
 import Footer from "../components/common/Footer";
+import Hero from "../components/About/Hero";
+import MissionVision from "../components/About/MissionVision";
+import OurTeam from "../components/About/OurTeam";
+import Impact from "../components/About/Impact";
 
 function AboutPage() {
   const [showSideBar, setShowSidebar] = useState(false);
@@ -9,7 +13,10 @@ function AboutPage() {
     <div>
       <Header setShowSidebar={setShowSidebar} />
       <Sidebar showSideBar={showSideBar} />
-      AboutPage
+      <Hero />
+      <MissionVision />
+      <OurTeam />
+      <Impact />
       <Footer />
     </div>
   );

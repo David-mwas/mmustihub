@@ -3,9 +3,10 @@ import sponser1 from "../../assets/mmustlogo.png";
 import sponser2 from "../../assets/konza.png";
 import sponser3 from "../../assets/SWOM.png";
 function Sponser() {
+  console.log();
   const Sponsers = [
     { id: 1, url: "https://mmust.ac.ke", img: sponser1 },
-    { id: 2, url: "https://konza.com", img: sponser2 },
+    { id: 2, url: "https://konza.go.ke", img: sponser2 },
     { id: 3, url: "#", img: sponser3 },
   ];
   return (
@@ -18,7 +19,11 @@ function Sponser() {
           <div key={index}>
             <a href={url} target="_blank">
               {" "}
-              <img src={img} alt="" className="w-[80px] scale-90 hover:scale-105 duration-200 ease-in-out transition-all" />
+              <img
+                src={img}
+                alt="logo image"
+                className="w-[80px] scale-90 hover:scale-105 duration-200 ease-in-out transition-all"
+              />
             </a>
           </div>
         ))}

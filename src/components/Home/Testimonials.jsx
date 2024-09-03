@@ -93,7 +93,7 @@ function Testimonials() {
               <div className="w-[200px]">
                 <img
                   src={img}
-                  alt=""
+                  alt="person image"
                   className=" rounded-full object-contain w-[150px]"
                 />
               </div>

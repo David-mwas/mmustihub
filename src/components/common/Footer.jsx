@@ -5,11 +5,16 @@ import { FaTwitter, FaGithub, FaFacebook } from "react-icons/fa";
 
 import LogoImg from "../../assets/logo1.png";
 import SubscribePopUp from "../Home/SubscribePopUp";
+import { useInView } from "react-intersection-observer";
 function Footer() {
+  const [ref, inView] = useInView({
+    triggerOnce: false,
+  });
+  console.log("ref", inView);
   return (
     <section className="w-screen text-white  bottom-0 relative" id="footer">
-      <form className="absolute top-[-140px] translate-x-[50%] right-[50%] z-[99]">
-        <SubscribePopUp />
+      <form className="absolute top-[-140px] translate-x-[50%] right-[50%] z-[99]" ref={ref}>
+        <SubscribePopUp inView={inView} />
       </form>
       <footer className="bg text-body py-8 relative pt-[70px] md:pt-24">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -17,7 +22,7 @@ function Footer() {
             <div>
               <img
                 src={LogoImg}
-                alt=""
+                alt="mmust ihub logo image"
                 className="mt-[-50px] sm:w-36 sm:h-36 object-contain  w-28 h-28"
               />
               <h5 className="text-xl font-semibold mb-6">Contact Info</h5>

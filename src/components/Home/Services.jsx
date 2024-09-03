@@ -8,7 +8,7 @@ function Services() {
         <div className="w-full lg:w-[50%] lg:mt-16">
           <img
             src={serviceimg}
-            alt=""
+            alt="pointer hand image"
             className="lg:w-[450px] lg:h-[300px] object-contain "
           />
         </div>

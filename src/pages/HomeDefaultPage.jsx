@@ -11,6 +11,7 @@ import Sponser from "../components/Home/Sponser";
 
 function Homepage() {
   const [showSideBar, setShowSidebar] = useState(false);
+ 
   return (
     <div>
       <Header setShowSidebar={setShowSidebar} />
@@ -21,7 +22,7 @@ function Homepage() {
       <Testimonials />
       <Membership />
       <Sponser />
-      <Footer />
+      <Footer/>
     </div>
   );
 }

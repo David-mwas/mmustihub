@@ -7,7 +7,7 @@ function About() {
         <div className="w-full lg:w-[30%] lg:ml-[60px]">
           <img
             src={aboutimg}
-            alt=""
+            alt="togetherness image"
             className="lg:w-[450px] lg:h-[350px] object-contain "
           />
         </div>

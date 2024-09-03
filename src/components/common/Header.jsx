@@ -5,7 +5,7 @@ import { FaTimes, FaDonate } from "react-icons/fa";
 import { HiMenuAlt1 } from "react-icons/hi";
 
 import LogoImg from "../../assets/logo1.png";
-
+ import { motion } from "framer-motion";
 const Header = ({ setShowSidebar }) => {
   const [showMenu, setShowMenu] = useState(false);
   const toggleMenu = () => {
@@ -13,10 +13,18 @@ const Header = ({ setShowSidebar }) => {
     setShowSidebar((prevState) => !prevState);
   };
   const { pathname } = useLocation();
-
+ 
   return (
     <>
-      <header className="fixed top-0 right-0 bg-white w-screen text-black shadow-xl z-[9999] justify-between items-center px-6 flex h-[80px] text-center">
+      <motion.header
+        className="fixed top-0 right-0 bg-white w-screen text-black shadow-xl z-[9999] justify-between items-center px-6 flex h-[80px] text-center"
+        initial={{ y: -100, opacity: 0 }}
+        animate={{ y: 0, opacity: 1 }}
+        transition={{
+          ease: "linear",
+          duration: 0.6,
+        }}
+      >
         <div className="w-full py-3 sm:py-0 relative">
           <div className="w-full flex justify-between items-center">
             {/* logo */}
@@ -25,7 +33,7 @@ const Header = ({ setShowSidebar }) => {
                 <div className="flex h-full gap-2 items-center font-semibold justify-center lg:ml-16">
                   <img
                     src={LogoImg}
-                    alt=""
+                    alt="mmust ihub logo image"
                     className="lg:h-28 object-contain lg:w-28 w-24 h-24"
                   />
                 </div>
@@ -124,7 +132,7 @@ const Header = ({ setShowSidebar }) => {
             </div>
           </div>
         </div>
-      </header>
+      </motion.header>
     </>
   );
 };
