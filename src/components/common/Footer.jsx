@@ -10,7 +10,6 @@ function Footer() {
   const [ref, inView] = useInView({
     triggerOnce: false,
   });
-  console.log("ref", inView);
   return (
     <section className="w-screen text-white  bottom-0 relative" id="footer">
       <form className="absolute top-[-140px] translate-x-[50%] right-[50%] z-[99]" ref={ref}>
