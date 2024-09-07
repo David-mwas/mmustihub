@@ -12,7 +12,7 @@ function Footer() {
   });
   return (
     <section className="w-screen text-white  bottom-0 relative" id="footer">
-      <form className="absolute top-[-140px] translate-x-[50%] right-[50%] z-[99]" ref={ref}>
+      <form className="absolute top-[-140px] translate-x-[50%] right-[50%] z-[97]" ref={ref}>
         <SubscribePopUp inView={inView} />
       </form>
       <footer className="bg text-body py-8 relative pt-[70px] md:pt-24">
