@@ -6,12 +6,14 @@ function Hero() {
     <div className="w-screen lg:h-screen px-6 lg:px-12 py-8 text-white aboutbg mt-0 flex flex-col justify-center items-center pt-[100px] lg:pt-0">
       <div className="w-full flex lg:flex-row flex-col items-start justify-between  ">
         <motion.div
-          className="w-full lg:w-[30%] lg:ml-[60px] flex items-center justify-center"
+          className="w-full lg:w-[30%] lg:ml-[60px] flex items-center justify-center origin-center"
           initial={{ x: "-100%", opacity: 0 }}
-          animate={{ x: 0, opacity: 1 }}
+          animate={{ x: 0, opacity: 1, rotate: 360 }}
           transition={{
             ease: "easeInOut",
             duration: 0.6,
+            type: "spring",
+            stiffness: 50,
           }}
         >
           <img

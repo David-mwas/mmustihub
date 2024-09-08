@@ -1,19 +1,41 @@
-import React from "react";
+import React, { useEffect } from "react";
 import aboutimg from "../../assets/about.png";
+import { motion, useAnimation } from "framer-motion";
+import { useInView } from "react-intersection-observer";
 function About() {
+  const controls = useAnimation();
+  const [ref, inView] = useInView({
+    triggerOnce: false,
+  });
+
+  useEffect(() => {
+    if (inView) {
+      controls.start({ x: 0, opacity: 1, rotate: 360 });
+    }
+  }, [controls, inView]);
   return (
     <div className="w-full px-6 lg:px-12 py-8 text-black bg-[#E0F7FA] mt-0">
       <div className="w-full flex lg:flex-row flex-col items-start justify-between  ">
-        <div className="w-full lg:w-[30%] lg:ml-[60px]">
+        <motion.div
+          className="w-full lg:w-[30%] lg:ml-[60px]"
+          initial={{ x: "-100%", opacity: 0 }}
+          animate={controls}
+          transition={{
+            ease: "easeInOut",
+            duration: 0.6,
+            type: "spring",
+            stiffness: 50,
+          }}
+        >
           <img
             src={aboutimg}
             alt="togetherness image"
             className="lg:w-[450px] lg:h-[350px] object-contain "
           />
-        </div>
+        </motion.div>
         <div className="w-full lg:w-[50%]">
           {" "}
-          <h2 className="text-secondary font-bold text-2xl mt-8 mb-4">
+          <h2 className="text-secondary font-bold text-2xl mt-8 mb-4" ref={ref}>
             What Mmust Ihub is
           </h2>
           <p className="w-full lg:w-[85%] text-md">
