@@ -71,6 +71,15 @@ button {
   background-repeat: no-repeat;
   background-size: cover;
 }
+.communitybg {
+  background-image: linear-gradient(
+      rgba(2, 204, 254, 0.62),
+      rgba(2, 204, 254, 0.62)
+    ),
+    url("./assets/communityandevent/comm.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 .bg {
   background-image: url("./assets/footer.png");
   background-repeat: no-repeat;
