@@ -12,7 +12,10 @@ function Footer() {
   });
   return (
     <section className="w-screen text-white  bottom-0 relative" id="footer">
-      <form className="absolute top-[-140px] translate-x-[50%] right-[50%] z-[97]" ref={ref}>
+      <form
+        className="absolute top-[-140px] translate-x-[50%] right-[50%] z-[97]"
+        ref={ref}
+      >
         <SubscribePopUp inView={inView} />
       </form>
       <footer className="bg text-body py-8 relative pt-[70px] md:pt-24">
@@ -24,7 +27,7 @@ function Footer() {
                 alt="mmust ihub logo image"
                 className="mt-[-50px] sm:w-36 sm:h-36 object-contain  w-28 h-28"
               />
-              <h5 className="text-xl font-semibold mb-6">Contact Info</h5>
+              <h3 className="text-xl font-semibold mb-6">Contact Info</h3>
               <ul className="space-y-4">
                 <li className="flex items-center space-x-2">
                   <svg
@@ -90,7 +93,7 @@ function Footer() {
               </ul>
             </div>
             <div>
-              <h5 className="text-xl font-semibold mb-6">Quick Links</h5>
+              <h3 className="text-xl font-semibold mb-6">Quick Links</h3>
               <div className=" flex flex-col ">
                 <ul className="flex flex-col ml-4 gap-2">
                   <li className="relative group cursor-pointer">
@@ -131,7 +134,7 @@ function Footer() {
               </div>
             </div>
             <div>
-              <h5 className="text-xl font-semibold mb-6">Useful Links</h5>
+              <h3 className="text-xl font-semibold mb-6">Useful Links</h3>
               <div className=" flex flex-col ">
                 <ul className="flex flex-col ml-4 gap-2">
                   <li className="relative group cursor-pointer">
@@ -162,16 +165,25 @@ function Footer() {
               </div>
             </div>
             <div>
-              <h5 className="text-xl font-semibold mb-6">Social Links</h5>
+              <h3 className="text-xl font-semibold mb-6">Social Links</h3>
               <div className="flex flex-row items-center text-center gap-6 text-tersiary">
-                <a href="">
-                  <FaTwitter className="hover:scale-125 h-[28px] w-[28px] transition-all duration-100 ease-in-out" />
+                <a href="#">
+                  <p>
+                    {" "}
+                    <FaTwitter className="hover:scale-125 h-[28px] w-[28px] transition-all duration-100 ease-in-out" />
+                  </p>
                 </a>
-                <a href="">
-                  <FaGithub className="hover:scale-125 h-[28px] w-[28px] transition-all duration-100 ease-in-out" />
+                <a href="#">
+                  <p>
+                    {" "}
+                    <FaGithub className="hover:scale-125 h-[28px] w-[28px] transition-all duration-100 ease-in-out" />
+                  </p>
                 </a>
-                <a href="">
-                  <FaFacebook className="hover:scale-125 h-[28px] w-[28px] transition-all duration-100 ease-in-out" />
+                <a href="#">
+                  <p>
+                    {" "}
+                    <FaFacebook className="hover:scale-125 h-[28px] w-[28px] transition-all duration-100 ease-in-out" />
+                  </p>
                 </a>
               </div>
             </div>
@@ -206,10 +218,13 @@ function Footer() {
           </div>
           <p className="font-bold">Back To Top </p>
         </div>
-        <p className="text-sm text-center text-secondary/75 mt-2">
-          Made with ❤ by @BinaryBrigades
-        </p>
-        <a href="https://github.com/Binary-Brigades"></a>{" "}
+
+        <a href="https://github.com/Binary-Brigades" target="_blank">
+          {" "}
+          <p className="text-sm text-center text-secondary/75 mt-2">
+            Made with ❤ by @BinaryBrigades
+          </p>
+        </a>
       </footer>
     </section>
   );

@@ -17,7 +17,7 @@ const Header = ({ setShowSidebar }) => {
   return (
     <>
       <motion.div
-        className="bg-white"
+        className="bg-white z-[9999] sticky"
         initial={{ y: "-100%", opacity: 0 }}
         animate={{ y: 0, opacity: 1 }}
         transition={{
@@ -63,15 +63,15 @@ const Header = ({ setShowSidebar }) => {
             {/*desktop navlinks */}
             <div className="hidden   ml-20 lg:block">
               <ul className="flex items-center gap-8">
-                <li className="relative py-4 group cursor-pointer">
+                <li className="relative group cursor-pointer hover:animate-bounce">
                   <NavLink
                     to={"/about"}
-                    className={`${pathname == "/about" && "activeLink"}`}
+                    className={`${pathname == "/about" && "activeLink"} h-full`}
                   >
                     About
                   </NavLink>
                 </li>
-                <li className="relative py-4 group cursor-pointer">
+                <li className="relative hover:animate-bounce group cursor-pointer">
                   <NavLink
                     to={"/programs"}
                     className={`${pathname == "/programs" && "activeLink"}`}
@@ -79,7 +79,7 @@ const Header = ({ setShowSidebar }) => {
                     Programs
                   </NavLink>
                 </li>
-                <li className="py-4">
+                <li className="hover:animate-bounce">
                   <NavLink
                     className={`${pathname == "/projects" && "activeLink"}`}
                     activeclassname="active"
@@ -89,7 +89,7 @@ const Header = ({ setShowSidebar }) => {
                     Projects
                   </NavLink>
                 </li>
-                <li className="py-4">
+                <li className="hover:animate-bounce">
                   <NavLink
                     className={`${pathname == "/membership" && "activeLink"}`}
                     activeclassname="active"
@@ -100,7 +100,7 @@ const Header = ({ setShowSidebar }) => {
                   </NavLink>
                 </li>
 
-                <li className="py-4">
+                <li className="hover:animate-bounce">
                   <NavLink
                     className={`${
                       pathname == "/communityandevents" && "activeLink"
@@ -112,7 +112,7 @@ const Header = ({ setShowSidebar }) => {
                     Community & Events
                   </NavLink>
                 </li>
-                <li className="py-4">
+                <li className="hover:animate-bounce">
                   <NavLink
                     to="/contact"
                     className={`${pathname == "/contact" && "activeLink"}`}
