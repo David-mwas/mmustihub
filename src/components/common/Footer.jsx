@@ -1,8 +1,8 @@
 import React from "react";
 import { HashLink } from "react-router-hash-link";
 import { Link, NavLink } from "react-router-dom";
-import { FaTwitter, FaGithub, FaFacebook } from "react-icons/fa";
-
+import {FaGithub, FaFacebook } from "react-icons/fa";
+import { FaXTwitter } from "react-icons/fa6";
 import LogoImg from "../../assets/logo1.png";
 import SubscribePopUp from "../Home/SubscribePopUp";
 import { useInView } from "react-intersection-observer";
@@ -170,10 +170,10 @@ function Footer() {
                 <a href="#">
                   <p>
                     {" "}
-                    <FaTwitter className="hover:scale-125 h-[28px] w-[28px] transition-all duration-100 ease-in-out" />
+                    <FaXTwitter className="hover:scale-125 h-[28px] w-[28px] transition-all duration-100 ease-in-out" />
                   </p>
                 </a>
-                <a href="#">
+                <a href="https://github.com/Mmust-Ihub/" target="_blank">
                   <p>
                     {" "}
                     <FaGithub className="hover:scale-125 h-[28px] w-[28px] transition-all duration-100 ease-in-out" />

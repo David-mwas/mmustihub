@@ -21,6 +21,7 @@ export default {
         "card-hover": "#555555",
         "card-active": "#666666",
         "card-active-hover": "#777777",
+        black: "#333",
       },
       textDecorationColor: {
         primary: "#2c3e9e",
@@ -42,6 +43,9 @@ export default {
         black: "#333",
       },
       boxShadowColor: {
+        primary: "#2c3e9e",
+        secondary: "#02CCFE",
+        tersiary: "#0FA958",
         black: "#333",
       },
     },
