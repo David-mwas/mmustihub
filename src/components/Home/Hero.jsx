@@ -1,6 +1,6 @@
 import React from "react";
 import vectors from "../../assets/Blobs2.svg";
-import bulb from "../../assets/bulb.png";
+import bulb from "../../assets/webp/bulb.webp";
 import { motion } from "framer-motion";
 function Hero() {
   return (
