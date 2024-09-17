@@ -36,7 +36,10 @@ function Impact() {
               className="border-[2px] border-tersiary h-[250px] flex flex-col justify-center items-center gap-4 lg:w-[250px] rounded-md"
             >
               <img src={img} alt="" className="w-[50px] rounded-lg" />
-              <p className="font-extrabold text-secondary mt-4 w-full text-center"> {count}</p>
+              <p className="font-extrabold text-secondary mt-4 w-full text-center">
+                {" "}
+                {count}
+              </p>
               <h5 className="font-semibold w-full text-center">{title}</h5>
             </div>
           ))}

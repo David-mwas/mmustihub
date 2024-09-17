@@ -81,10 +81,12 @@ button {
   background-size: cover;
 }
 .bg {
-  background-image: url("./assets/footer.png");
-  background-repeat: no-repeat;
-  background-position: top;
-  background-size: cover;
+ background-image: 
+  linear-gradient(to right, rgba(23, 16, 49, 0.9), rgba(34, 32, 74, 0.9)),
+  url('./assets/footer.png');
+background-size: cover;
+background-position: center;
+
 }
 .list {
   list-style-type: disk;
@@ -92,18 +94,25 @@ button {
   list-style-position: inside;
 }
 .aboutbg {
-  background-image: url("./assets/about/Mantle3.png");
-  background-repeat: no-repeat;
-  background-position: top;
-  background-size: cover;
+ background-image: 
+  linear-gradient(to right, rgba(71, 47, 138, 0.9), rgba(59, 174, 196, 0.9)),
+  url('./assets/Mantle2.png');
+background-size: cover;
+background-position: center;
+
 }
 
 .herobg {
-  background-image: url("./assets/Mantle1.png");
-  background-repeat: no-repeat;
-  background-position: top;
+  background: url("./assets/webp/Mantle1.webp");
   background-size: cover;
-}
+  background-position: center;
+  background-repeat: no-repeat;
+/* background-image: 
+  linear-gradient(to right, rgba(66, 49, 124, 0.9), rgba(59, 169, 194, 0.9)),
+  url('./assets/webp/Mantle1.webp');
+background-size: cover;
+background-position: center;*/
+}  
 
 /* .gamesbg {
   background-image: url("./assets/Games and sports 2.png");
