@@ -1,7 +1,7 @@
 import React from "react";
-import sponser1 from "../../assets/mmustlogo.png";
-import sponser2 from "../../assets/konza.png";
-import sponser3 from "../../assets/SWOM.png";
+import sponser1 from "../../assets/webp/mmustlogo.webp";
+import sponser2 from "../../assets/webp/konza.webp";
+import sponser3 from "../../assets/webp/SWOM.webp";
 function Sponser() {
   console.log();
   const Sponsers = [

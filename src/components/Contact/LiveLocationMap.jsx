@@ -1,5 +1,5 @@
 import React from "react";
-import map from "../../assets/contact/image.png";
+import map from "../../assets/contact/image.webp";
 function LiveLocationMap() {
   return (
     <div className="w-screen flex flex-col justify-center items-center px-6 lg:px-24 py-8 pb-[180px]">

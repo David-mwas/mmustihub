@@ -1,6 +1,5 @@
 import React, { useState } from "react";
-import { Link, NavLink, useLocation } from "react-router-dom";
-// import { HashLink } from "react-router-hash-link";
+import {NavLink, useLocation } from "react-router-dom";
 
 function Sidebar({ showSideBar }) {
   const { pathname } = useLocation();

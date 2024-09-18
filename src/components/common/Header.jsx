@@ -1,10 +1,9 @@
 import React, { useState } from "react";
 import { Link, NavLink, useLocation } from "react-router-dom";
-// import { HashLink } from "react-router-hash-link";
 import { FaTimes, FaDonate } from "react-icons/fa";
 import { HiMenuAlt1 } from "react-icons/hi";
 
-import LogoImg from "../../assets/logo1.png";
+import LogoImg from "../../assets/webp/Logo.webp";
 import { motion } from "framer-motion";
 const Header = ({ setShowSidebar }) => {
   const [showMenu, setShowMenu] = useState(false);

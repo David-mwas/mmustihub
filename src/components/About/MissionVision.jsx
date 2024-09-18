@@ -1,6 +1,6 @@
 import React from "react";
-import aboutimg1 from "../../assets/about/mission.png";
-import aboutimg2 from "../../assets/about/vision.png";
+import aboutimg1 from "../../assets/about/mission.webp";
+import aboutimg2 from "../../assets/about/vision.webp";
 function MissionVision() {
   return (
     <div className="w-full px-6 lg:px-12 lg:py-6 text-black mt-0 flex flex-col items-center justify-center">

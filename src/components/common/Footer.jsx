@@ -3,7 +3,7 @@ import { HashLink } from "react-router-hash-link";
 import { Link, NavLink } from "react-router-dom";
 import {FaGithub, FaFacebook } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
-import LogoImg from "../../assets/logo1.png";
+import LogoImg from "../../assets/webp/logo1.webp";
 import SubscribePopUp from "../Home/SubscribePopUp";
 import { useInView } from "react-intersection-observer";
 function Footer() {

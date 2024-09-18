@@ -1,5 +1,4 @@
 import React from "react";
-import { motion } from "framer-motion";
 import { HashLink } from "react-router-hash-link";
 import { FaArrowDown } from "react-icons/fa";
 function Hero() {

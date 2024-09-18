@@ -1,5 +1,5 @@
 import React from "react";
-import serviceimg from "../../assets/services.png";
+import serviceimg from "../../assets/webp/services.webp";
 import { Link } from "react-router-dom";
 function Services() {
   return (
