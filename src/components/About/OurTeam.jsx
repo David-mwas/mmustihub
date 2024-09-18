@@ -88,23 +88,23 @@ function OurTeam() {
               <h5 className="mt-6 font-bold text-lg">{name}</h5>
               <p className="font-semibold text-gray-500"> {role}</p>
             </div>
-            <div className="flex flex-row items-center text-center gap-6 text-secondary hover:text-tersiary">
+            <div className="flex flex-row items-center text-center gap-6 text-secondary ">
               <a href={twitter} target="_blank">
                 <p>
                   {" "}
-                  <FaXTwitter className="hover:scale-125 h-[20px] w-[20px] transition-all duration-300 ease-in-out" />
+                  <FaXTwitter className="hover:scale-125 hover:text-tersiary h-[20px] w-[20px] transition-all duration-300 ease-in-out" />
                 </p>
               </a>
               <a href={github} target="_blank">
                 <p>
                   {" "}
-                  <FaGithub className="hover:scale-125 h-[20px] w-[20px] transition-all duration-300 ease-in-out" />
+                  <FaGithub className="hover:scale-125 h-[20px] hover:text-tersiary w-[20px] transition-all duration-300 ease-in-out" />
                 </p>
               </a>
               <a href={linkedin} target="_blank">
                 <p>
                   {" "}
-                  <FaLinkedin className="hover:scale-125 h-[20px] w-[20px] transition-all duration-300 ease-in-out" />
+                  <FaLinkedin className="hover:scale-125 hover:text-tersiary h-[20px] w-[20px] transition-all duration-300 ease-in-out" />
                 </p>
               </a>
             </div>
