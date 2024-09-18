@@ -38,7 +38,7 @@ function OurTeam() {
     {
       name: "Michael Joseph",
       img: img4,
-      role: "Secretary",
+      role: "Events Organiser",
       github: "https://github.com/Mikiejoe",
       linkedin: "https://www.linkedin.com/in/joseph-michael-445111235/",
       twitter: "https://x.com/omoshjoe02",
