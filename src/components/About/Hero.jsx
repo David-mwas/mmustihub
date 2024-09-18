@@ -1,5 +1,5 @@
 import React from "react";
-import aboutimg from "../../assets/about.png";
+import aboutimg from "../../assets/webp/about1.webp";
 import { motion } from "framer-motion";
 function Hero() {
   return (

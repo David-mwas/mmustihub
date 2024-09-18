@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import aboutimg from "../../assets/about.png";
+import aboutimg from "../../assets/webp/about.webp";
 import { motion, useAnimation } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 function About() {

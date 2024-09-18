@@ -1,5 +1,5 @@
-import commIcons from "../../assets/communityandevent/commicons.png";
-import mic from "../../assets/communityandevent/mic.png";
+import commIcons from "../../assets/communityandevent/commicons.webp";
+import mic from "../../assets/communityandevent/mic.webp";
 import React from 'react'
 import Join from "./Join";
 

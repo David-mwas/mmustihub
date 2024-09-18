@@ -1,10 +1,10 @@
 import React from 'react'
-import ProjectHero from './ProjectHero'
+import ProgrammeHero from './ProgrammeHero'
 
 function MainProjects() {
   return (
   <div >
-          <ProjectHero />
+          <ProgrammeHero />
     </div>
   )
 }

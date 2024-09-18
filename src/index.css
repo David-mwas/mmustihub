@@ -58,7 +58,7 @@ button {
 }
 
 .membershipbg {
-  background-image: url("./assets/Mantle2.png");
+  background-image: url("./assets/webp/Mantle2.webp");
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -67,7 +67,7 @@ button {
       rgba(2, 204, 254, 0.62),
       rgba(2, 204, 254, 0.62)
     ),
-    url("./assets/contact/Rectangle.png");
+    url("./assets/contact/rectangle.webp");
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -76,29 +76,26 @@ button {
       rgba(2, 204, 254, 0.62),
       rgba(2, 204, 254, 0.62)
     ),
-    url("./assets/communityandevent/comm.png");
+    url("./assets/communityandevent/comm.webp");
   background-repeat: no-repeat;
   background-size: cover;
 }
 .bg {
- background-image: 
-  linear-gradient(to right, rgba(23, 16, 49, 0.9), rgba(34, 32, 74, 0.9)),
-  url('./assets/footer.png');
-background-size: cover;
-background-position: center;
-
+   background: url("./assets/webp/footer.webp");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 .list {
   list-style-type: disk;
-  list-style-image: url("./assets/Vector.png");
+  list-style-image: url("./assets/webp/Vector.webp");
   list-style-position: inside;
 }
 .aboutbg {
- background-image: 
-  linear-gradient(to right, rgba(71, 47, 138, 0.9), rgba(59, 174, 196, 0.9)),
-  url('./assets/Mantle2.png');
-background-size: cover;
-background-position: center;
+  background: url("./assets/about/mantle3.webp");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 
 }
 
@@ -107,16 +104,8 @@ background-position: center;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-/* background-image: 
-  linear-gradient(to right, rgba(66, 49, 124, 0.9), rgba(59, 169, 194, 0.9)),
-  url('./assets/webp/Mantle1.webp');
-background-size: cover;
-background-position: center;*/
 }  
 
-/* .gamesbg {
-  background-image: url("./assets/Games and sports 2.png");
-}  */
 
 ::-webkit-scrollbar {
   width: 5px;

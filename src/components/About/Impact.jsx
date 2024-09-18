@@ -1,5 +1,5 @@
 import React from "react";
-import img from "../../assets/about/image4.png";
+import img from "../../assets/about/image4.webp";
 function Impact() {
   const impactData = [
     {

@@ -1,6 +1,6 @@
 import React from 'react'
 import Card from './Card';
-import robot from "../../assets/communityandevent/robot.png";
+import robot from "../../assets/communityandevent/robot.webp";
 function Events() {
   return (
     <div className="w-[80%] mb-[160px]">

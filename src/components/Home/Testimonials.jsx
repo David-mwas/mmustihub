@@ -1,5 +1,5 @@
 import React from "react";
-import img from "../../assets/person1.png";
+import img from "../../assets/person1.webp";
 
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
