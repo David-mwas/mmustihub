@@ -1,5 +1,5 @@
 import React from "react";
-import img1 from "../../assets/OurTeam/maich.jpeg";
+import img1 from "../../assets/OurTeam/maich.webp";
 import img2 from "../../assets/OurTeam/mwas.jpeg";
 import img3 from "../../assets/OurTeam/antony.jpeg";
 import img4 from "../../assets/OurTeam/joe.jpeg";
@@ -21,7 +21,7 @@ function OurTeam() {
     {
       name: "Michael Maina",
       img: img1,
-      role: "Developer Lead",
+      role: "Project Developer Lead",
       github: "https://github.com/Muchael123/",
       linkedin: "https://www.linkedin.com/in/michael-maina-087227235",
       twitter: "https://x.com/Maich_mgaza",
@@ -86,7 +86,7 @@ function OurTeam() {
             />
             <div>
               <h5 className="mt-6 font-bold text-lg">{name}</h5>
-              <p className="font-semibold"> {role}</p>
+              <p className="font-semibold text-gray-500"> {role}</p>
             </div>
             <div className="flex flex-row items-center text-center gap-6 text-secondary hover:text-tersiary">
               <a href={twitter} target="_blank">
